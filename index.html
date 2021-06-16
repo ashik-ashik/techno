@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The name of this project is 'ROBOTIZER'. This project is buit by using HTML-5 CSS-5, little bit JavaScript, jQuery, Bootstrap -5, and others thirt party jQuery plugins.">
+  <meta name="keywords" content="dark template, Bootstrap template, html template, demo project">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/favicon/ashik.ico" type="image/x-icon">
+
+  <!-- BS -->
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+  <!-- OC -->
+  <link rel="stylesheet" href="./assets/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/OwlCarousel/dist/assets/owl.theme.default.min.css">
+
+  <!-- BI -->
+  <link rel="stylesheet" href="./assets/boxicons/css/boxicons.min.css">
+
+  <!-- veno -->
+  <link rel="stylesheet" href="./assets/VenoBox-master/venobox/venobox.min.css">
+
+  <!-- FS -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="./assets/aos-master/dist/aos.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>Robotizer Project By Ashik</title>
+
+</head>
+<body  data-bs-spy="scroll" data-bs-target="#robotizer" tabindex="0">
+
+
+  <!-- Navigation section  -->
+  <header class="header sticky-top" id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 bg-1" id="robotizer">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/favicon/ashik.ico" alt="" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myMenuContent" aria-controls="myMenuContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myMenuContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold" href="#services">Servides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fs-6 fw-bold" href="#contact-me">Contact</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="text-uppercase fs-6 fw-bold btn btn-outline-primary shadow-none rounded-pill py-2 px-4" data-bs-toggle="modal" href="#login-pop-up" role="button"  data-aos="zoom-out" data-aos-delay="200">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+                <!-- login pop up -->
+                <div class="modal fade" id="login-pop-up" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">Account Log In</h5>
+                        <button type="button" class="btn-close shadow-none fs-14" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <div class="form-area py-5">
+                          <form action="" class="login-form" name="login-form" onsubmit="logInTry(); return false">
+                          <div class="row">
+
+                            <div class="col-12">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-user text-danger"></i></div>
+                                <input type="email" name="loginUsername" class="form-control shadow-none" id="login-username" placeholder="Username or Email">
+                              </div>
+                            </div>
+                            <div class="col-12 my-3">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-lock text-danger"></i></div>
+                                <input type="password" name="loginPassword" class="form-control shadow-none" id="login-password" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="login-remember">
+                                <label class="form-check-label" for="login-remember">
+                                  Remember me on this devise
+                                </label>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="d-grid my-4">
+                            <input type="submit" value="Log In" class="btn btn-outline-danger rounded-pill text-uppercase fw-md fs14">
+                          </div>
+                          <div class="error-box text-center my-4 p-3"><span class="text-danger fw-md small"></span></div>
+                          </form>
+                          <a href="#" class="text-decoration-none my-4">Forgot Your Password?</a>
+                        </div>
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <span class="fw-md me-2">Not a Member? </span>
+                        <button class="btn text-success text-uppercase fw-bold shadow-none" data-bs-target="#signup-pop-up" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- sign up pop up -->
+                <div class="modal fade" id="signup-pop-up" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel2">Create Your Account</h5>
+                        <button type="button" class="btn-close shadow-none fs-14" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-area py-5">
+                          <form action="" class="login-form">
+                          <div class="row">
+
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                              <div class="input-group">
+                                <div class="input-group-text"><img src="./img/name.png" alt="" class="img-fluid"></div>
+                                <input type="text" name="newFName" class="form-control shadow-none" id="newFName" placeholder="First Name">
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="input-group">
+                                <input type="text" name="newLName" class="form-control shadow-none" id="newLName" placeholder="Last Name">
+                                <div class="input-group-text"><img src="./img/name.png" alt="" class="img-fluid"></div>
+                              </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-user text-success"></i></div>
+                                <input type="text" name="newUsername" class="form-control shadow-none" id="newUsername" placeholder="Username">
+                              </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-envelope text-success"></i></div>
+                                <input type="email" name="newEmail" class="form-control shadow-none" id="newEmail" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-lock text-danger"></i></div>
+                                <input type="password" name="newPassword" class="form-control shadow-none" id="newPassword" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                              <div class="input-group">
+                                <div class="input-group-text"><i class="bx bxs-lock text-danger"></i></div>
+                                <input type="password" name="confirmPassword" class="form-control shadow-none" id="confirmPassword" placeholder=" Confirm Password">
+                              </div>
+                            </div>
+                            <div class="col-12 mt-3">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="login-remember">
+                                <label class="form-check-label" for="login-remember">
+                                  By signing up, you agree to our <a href="#" class="fw-bold">Terms of service</a> and our <a href="#" class="fw-bold">Privacy policy</a>.
+                                </label>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="d-grid my-4">
+                            <input type="submit" value="Sign Up" class="btn btn-outline-success rounded-pill text-uppercase fw-md fs14">
+                          </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <span class="fw-md">Already hvae an account? </span>
+                        <button class="btn text-primary text-uppercase fw-bold shadow-none" data-bs-target="#login-pop-up" data-bs-toggle="modal" data-bs-dismiss="modal">Log In</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  <!-- ! Navigation section  -->
+  
+
+<main class="main" id="main">
+
+  <!-- hero section -->
+  <section class="hero" id="home">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-md-6 mb-3 mb-md-0 align-self-center position-relative">
+          <div class="dollar py-2 px-3 d-inline-block bg-5 rounded-pill"  data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-dollar p-1 bg-6 rounded-circle me-2"></i><span class="dollar-text">Discover a new ways to enjoy your World!</span>
+          </div>
+          <h3 class="text-white fw-bold my-4"  data-aos="fade-up" data-aos-delay="450">
+            Demo Artificial Robotizer UI Design Platform
+          </h3>
+          <p class="text-white mb-5 fs-5"  data-aos="fade-up" data-aos-delay="600">
+            We have over 15 year exprience in business consultting arena. We have over 15 year exprience in business consultting arena and artficial intelligence.
+          </p>
+
+          <a href="#" class="btn btn-outline-primary px-4 rounded-pill"  data-aos="fade-up" data-aos-delay="750">Learn More</a>
+          <a href="#" class="btn btn-outline-primary px-4 rounded-pill ms-3"  data-aos="fade-up" data-aos-delay="800">Contact Us</a>
+
+            <a href="#how-works"><i class="bx d-none d-md-block scroll-down bx-heart position-absolute top-100 start-100 translate-middle-x fs-2"></i></a>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/head-bg-1.svg" alt="" class="img-fluid"  data-aos="fade-up" data-aos-delay="550">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! hero section -->
+
+
+<!-- how it works -->
+  <section class="how-works py-5 bg-1" id="how-works">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center pb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="dots" data-aos="fade-up" data-aos-delay="100">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-up" data-aos-delay="250">How it Works</h3>
+        <p class="cl-ass fs-16 fw-md"  data-aos="fade-up" data-aos-delay="400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+      <div class="row pY-5">
+        <div class="col-md-6 mb-3 mb-md-0 text-center">
+          <img src="./img/phone.png" alt="" class="img-fluid img-anim" data-aos="fade-up" data-aos-delay="250">
+        </div>
+
+        <div class="col-md-6">
+          <!-- box 1 -->
+          <div class="icon-box p-4 bg-2 d-flex flex-row" data-aos="flip-left" data-aos-delay="200">
+            <div class="icon ">
+              <span class="d-inline-block d-flex justify-content-center align-items-center bg-7 rounded-circle text-white fw-bold" style="width: 50px; height: 50px;">01</span>
+            </div>
+            <div class="text ms-4">
+              <h5 class="text-white fw-md">
+                Powerful Mobile And Online App
+              </h5>
+              <p class="text-white cl-ass fs-14">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non hic eum dolores natus, vitae, quae, facere perferendis.
+              </p>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div class="icon-box mt-4 p-4 bg-2 d-flex flex-row" data-aos="flip-left" data-aos-delay="150">
+            <div class="icon ">
+              <span class="d-inline-block d-flex justify-content-center align-items-center bg-7 rounded-circle text-white fw-bold" style="width: 50px; height: 50px;">02</span>
+            </div>
+            <div class="text ms-4">
+              <h5 class="text-white fw-md">
+                Brings More Transparency And Speed
+              </h5>
+              <p class="text-white cl-ass fs-14">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non hic eum dolores natus, vitae, quae, facere perferendis.
+              </p>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="icon-box mt-4 p-4 bg-2 d-flex flex-row" data-aos="flip-left" data-aos-delay="150">
+            <div class="icon ">
+              <span class="d-inline-block d-flex justify-content-center align-items-center bg-7 rounded-circle text-white fw-bold" style="width: 50px; height: 50px;">03</span>
+            </div>
+            <div class="text ms-4">
+              <h5 class="text-white fw-md">
+                Special For Multiple Use Capabilities
+              </h5>
+              <p class="text-white cl-ass fs-14">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda beatae provident non hic eum dolores natus, vitae, quae, facere perferendis.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! how it works -->
+
+
+
+<!-- extra care/ about -->
+  <section class="care py-5 bg-3" id="about">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="./img/about1 (1).svg" alt="" class="img-fluid img-anim">
+        </div>
+
+        <div class="col-md-6">
+          <div class="dots" data-aos="fade-right" data-aos-delay="100">
+            <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+            <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+            <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+            <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+            <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+            <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+          </div>
+
+          <h3 class="text-white fw-bold my-4" data-aos="fade-up" data-aos-delay="150">
+            I complete every project with extra care as customer need.
+          </h3>
+          <P class="cl-ass fw-md" data-aos="fade-up" data-aos-delay="150">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores voluptatibus fugiat ab! Illo ipsa earum autem nisi blanditiis possimus ut laborum expedita esse dolorem eligendi dignissimos, pariatur dolorum consequuntur!
+          </P>
+          <P class="cl-ass fw-md mt-4 mb-5" data-aos="fade-up" data-aos-delay="150">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo laboriosam, dolorum ducimus similique aliquam consequuntur saepe numquam suscipit praesentium fuga eveniet error assumenda eos quasi doloribus ullam autem, quisquam aliquam consequuntur saepe numquam suscipit similique!
+          </P>
+          <a href="#" class="btn shadow-none btn-primary rounded-pill py-2 px-4" data-aos="zoom-in" data-aos-delay="150">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! extra care -->
+
+
+<!-- trust -->
+  <section class="trust py-5 bg-1" id="trust">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center py-4">
+        <div class="dots" data-aos="zoom-in" data-aos-duration="500">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-up" data-aos-delay="150">We Are Trusted</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="fade-up" data-aos-delay="150">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="row align-items-stretch py-5">
+        <div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+          <div class="icon-box p-3 bg-white rounded h-100 pt-3" data-aos="fade-up" data-aos-delay="150">
+            <img src="./img/1_1.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <i class="bx bx-check btn py-2 shadow-none bg-1 text-white fs-3 user-select-none"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+          <div class="icon-box p-3 bg-white rounded h-100 pt-3" data-aos="fade-up" data-aos-delay="300">
+            <img src="./img/2_1.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <span class="btn py-2 shadow-none bg-1 text-white fs-16 user-select-none">15.55</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3 mb-lg-0">
+          <div class="icon-box p-3 pt-5 bg-white rounded h-100 pt-3" data-aos="fade-up" data-aos-delay="450">
+            <img src="./img/3_1.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <span class="btn py-2 shadow-none bg-1 text-white fs-16 user-select-none">15.55</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3 mb-md-0">
+          <div class="icon-box p-3 pt-5 bg-white rounded h-100 pt-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="./img/4_1.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <span class="btn py-2 shadow-none bg-1 text-white fs-16 user-select-none">15.55</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3 mb-md-0">
+          <div class="icon-box p-3 pt-5 bg-white rounded h-100 pt-3" data-aos="fade-up" data-aos-delay="750">
+            <img src="./img/5_0.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <span class="btn py-2 shadow-none bg-1 text-white fs-16 user-select-none">15.55</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-3 mb-md-0">
+          <div class="icon-box p-3 pt-5 bg-white rounded h-100  pt-3" data-aos="fade-up" data-aos-delay="900">
+            <img src="./img/6_0.png" alt="" class="img-fluid">
+            <div class="d-grid mt-3">
+              <span class="btn py-2 shadow-none bg-1 text-white fs-16 user-select-none">15.55</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! trust -->
+
+
+
+
+<!-- solution -->
+<section class="solution py-5 bg-1" id="solution">
+  <div class="container">
+    <div class="row py-5">
+      
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="dots" data-aos="fade-left" data-aos-delay="200">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+
+        <h3 class="text-white fw-bold my-4" data-aos="fade-up" data-aos-delay="300">
+          We complete every project with extra care as customer asks.
+        </h3>
+        <P class="cl-ass fw-md" data-aos="fade-up" data-aos-delay="400">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maiores voluptatibus fugiat ab! Illo ipsa earum autem nisi blanditiis possimus ut laborum expedita esse dolorem eligendi dignissimos, pariatur dolorum consequuntur!
+        </P>
+        <P class="cl-ass fw-md mt-4 mb-5" data-aos="fade-up" data-aos-delay="500">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo laboriosam, dolorum ducimus similique aliquam consequuntur saepe numquam suscipit praesentium fuga eveniet error assumenda eos quasi doloribus ullam autem, quisquam aliquam consequuntur saepe numquam suscipit similique!
+        </P>
+        <a href="#" class="btn shadow-none btn-primary rounded-pill py-2 px-4" data-aos="zoom-up" data-aos-delay="600">Learn More</a>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="./img/solution.png" alt="" class="img-fluid img-anim">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ! solution -->
+
+
+
+<!-- video -->
+  <section class="video bg-4 py-5" id="video">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center py-4">
+        <div class="dots" data-aos="zoom-in" data-aos-delay="200">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="zoom-in" data-aos-delay="400">Watch Our Demo Video</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="zoom-in" data-aos-delay="600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="new-video mt-5 position-relative border px-4 w-75 m-auto" style="border-color: aqua !important; border-width: 2px;">
+        <div class="video-area " data-aos="fade-up" data-aos-delay="300">
+          <img src="./img/bg-4.jpg" alt="" class="img-fluid  position-relative">
+
+        <a class="venobox position-absolute" data-autoplay="true" data-vbtype="video" href="https://youtu.be/Pls_q2aQzHg">
+          <i class="bx bx-play bg-7 position-relative text-white fs-1 p-4 rounded-circle" data-aos="zoom-in" data-aos-delay="200"></i>
+        </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- video -->
+
+
+<!-- service -->
+  <section class="services py-5 bg-1" id="services">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center py-4">
+        <div class="dots" data-aos="fade-up" data-aos-delay="200">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-up" data-aos-delay="400">Our Core Services</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="fade-up" data-aos-delay="600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="row py-5">
+        <div class="col-md-4 mb-4 mb-lg-5">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="./img/1.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Smart Trading Modules
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-5">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="400">
+            <img src="./img/2.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Adaptive Social Assistant
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-lg-5">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="600">
+            <img src="./img/3.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Analyzer of the News
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="200">
+            <img src="./img/4.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Analyzer of the News
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="400">
+            <img src="./img/5.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Analyzer of the News
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center shadow-lg px-2 py-4" data-aos="fade-up" data-aos-delay="600">
+            <img src="./img/6.svg" alt="" class="img-fluid">
+            <h5 class="text-white my-4">
+              Analyzer of the News
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- ! service -->
+
+
+<!-- update section -->
+  <section class="update py-5 bg-1" id="update">
+    <div class="container">
+      <div class="update-box px-4 py-5 rounded" data-aos="flip-down" data-aos-delay="300">
+        <div class="w-100 w-md-75 m-auto">
+          <h2 class="text-center text-white fw-bold">Don’t Miss Our News And Updates!</h2>
+        <p class="text-light fs-5 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis <br> accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+        <form action="" class="form px-lg-5 pt-4">
+          <div class="row align-items-center">
+            <div class="col-11 col-sm-10">
+              <input type="email" name="email" id="updateEmail" class="form-control bg-transparent shadow-none text-white fw-bold fs-16 border-bottom" placeholder="Enter Your E-mail...">
+                </div>
+                <div class="col-1 col-sm-2 text-end">
+              <input type="submit" value="go" class="btn btn-primary shadow-none p-3 rounded-circle text-uppercase">
+            </div>
+          </div>
+        </form>
+
+        <div class="d-flex justify-content-between pt-5">
+          <div class="tele">
+            <span class="text-white fs-4">Join Our Chat:</span> <a href="#" class="btn ms-4 text-uppercase btn-light shadow-none rounded-pill">
+              <i class="bx bxl-telegram me-2"></i> telegram</a>
+          </div>
+          <div class="social">
+            <ul class="unstyled">
+              <li class="d-inline-block px-2"><i class="bx bxl-facebook text-white fs-3"></i></li>
+              <li class="d-inline-block px-2"><i class="bx bxl-twitter text-white fs-3"></i></li>
+              <li class="d-inline-block px-2"><i class="bx bxl-instagram text-white fs-3"></i></li>
+              <li class="d-inline-block px-2"><i class="bx bxl-linkedin text-white fs-3"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! update section -->
+
+
+
+<!-- FAQ -->
+  <section class="faq py-5 bg-2" id="faq">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center py-4">
+        <div class="dots" data-aos="fade-up" data-aos-delay="200">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-up" data-aos-delay="400">Frequently Asked Questions</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="fade-up" data-aos-delay="500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="row py-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="accordion bg-2" id="faqs">
+            <div class="accordion-item bg-transparent border-top border-0 mb-1" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="accordion-header" id="faq-1">
+                <button class="accordion-button bg-transparent shadow-none ps-1 text-white fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1" aria-expanded="true" aria-controls="collapse-faq-1">
+                  What are the objectives of this startup?
+                </button>
+              </h2>
+              <div id="collapse-faq-1" class="accordion-collapse collapse show" aria-labelledby="faq-1" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                  <p class="fs-16 cl-ass">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-top border-0 mb-1" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="accordion-header" id="faq-2">
+                <button class="accordion-button collapsed ps-1 bg-transparent shadow-none text-white fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2" aria-expanded="false" aria-controls="collapse-faq-2">
+                  What is Token Sale and pre-sale?
+                </button>
+              </h2>
+              <div id="collapse-faq-2" class="accordion-collapse collapse" aria-labelledby="faq-2" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                  <p class="fs-16 cl-ass">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-top border-0 mb-1" data-aos="fade-up" data-aos-delay="600">
+              <h2 class="accordion-header" id="faq-3">
+                <button class="accordion-button collapsed ps-1 bg-transparent shadow-none text-white fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3" aria-expanded="false" aria-controls="collapse-faq-3">
+                  What is the bebefits we get on contribution?
+                </button>
+              </h2>
+              <div id="collapse-faq-3" class="accordion-collapse collapse" aria-labelledby="faq-3" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                  <p class="fs-16 cl-ass">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-top border-bottom border-0 mb-1" data-aos="fade-up" data-aos-delay="800">
+              <h2 class="accordion-header" id="faq-4">
+                <button class="accordion-button collapsed ps-1 bg-transparent shadow-none text-white fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-4" aria-expanded="false" aria-controls="collapse-faq-3">
+                  how may I take part in pre-sale?
+                </button>
+              </h2>
+              <div id="collapse-faq-4" class="accordion-collapse collapse" aria-labelledby="faq-4" data-bs-parent="#faqs">
+                <div class="accordion-body">
+                  <p class="fs-16 cl-ass">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore omnis quaerat nostrum, pariatur ipsam sunt accusamus enim necessitatibus est fugiat, assumenda dolorem, deleniti corrupti cupiditate ipsum, dolorum voluptatum esse error?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-end">
+          <img src="./img/faq.svg" alt="" class="img-gluid img-anim">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+<!-- ! FAQ -->
+
+
+<!-- quality -->
+  <section class="quality py-5" id="quality">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center" data-aos="flip-left" data-aos-delay="200">
+            <i class="bx bx-brightness fs-1 text-white"></i>
+            <h5 class="text-white my-4">
+              Quality
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, cumque. Fuga neque similique quibusdam animi ipsam obcaecati.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center" data-aos="flip-left" data-aos-delay="400">
+            <i class="bx bx-brightness fs-1 text-white"></i>
+            <h5 class="text-white my-4">
+              Creativity
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, cumque. Fuga neque similique quibusdam animi ipsam obcaecati.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="icon-box text-center" data-aos="flip-left" data-aos-delay="600">
+            <i class="bx bx-brightness fs-1 text-white"></i>
+            <h5 class="text-white my-4">
+              Realiablity
+            </h5>
+            <p class="text-white fs-16 fw-md cl-ass">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illo, cumque. Fuga neque similique quibusdam animi ipsam obcaecati.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ! quality -->
+
+
+<!-- team -->
+  <section class="team py-5 bg-1" id="team">
+    <div class="container">
+       <!-- section title -->
+       <div class="section-title text-center py-4">
+        <div class="dots" data-aos-delay="150" data-aos="zoom-in">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos-delay="300" data-aos="zoom-in">Our Team Members</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos-delay="450" data-aos="zoom-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="row py-5">
+        
+        <div class="col-md-3 mb-4">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="150">
+            <img src="./img/1.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">SUNNY KHAN</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">EXECUTIVE OFFICER</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="300">
+            <img src="./img/2.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">AJOY DAS</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">business development</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="450">
+            <img src="./img/3.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">AFROZA MOU</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">ux/ui designer</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="600">
+            <img src="./img/4.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">LIM SARAH</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">HEAD OF MARKETING</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="150">
+            <img src="./img/1.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">SUNNY KHAN</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">EXECUTIVE OFFICER</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="300">
+            <img src="./img/2.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">AJOY DAS</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">business development</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="450">
+            <img src="./img/3.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">AFROZA MOU</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">ux/ui designer</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="team-member text-center shadow py-2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="600">
+            <img src="./img/4.png" alt="" class="img-fluid">
+            <h5 class="text-primary text-uppercase fw-md mt-3 mb-2">LIM SARAH</h5>
+            <p class="text-uppercase cl-ass fw-thin fs-14">HEAD OF MARKETING</p>
+            <ul class="follow unstyled p-0">
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-facebook fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-twitter fs-4"></i></a></li>
+              <li class="d-inline-block me-2"><a href="#"><i class="bx bxl-linkedin fs-4"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<!-- ! team -->
+
+
+<!-- latest blog section -->
+  <section class="latest-blog py-5 bg-4" id="latest-blog">
+    <div class="container">
+       <!-- section title -->
+       <div class="section-title text-center py-4">
+        <div class="dots" data-aos="fade-up" data-aos-delay="150">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-up" data-aos-delay="300">Our Latest Blogs</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="fade-up" data-aos-delay="450">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="row py-5">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="post-area shadow py-3" data-aos="fade-up" data-aos-delay="150">
+            <div class="featured-img overflow-hidden">
+              <img src="./img/1_0.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="meta">
+              <ul class="unstyled px-0 py-2">
+                <li class="d-inline-block px-2"><i class="bx bxs-user me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">admin</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-time me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">June 15th</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-folder me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">Web</span></li>
+              </ul>
+            </div>
+            <h3 class="post-title text-white fs-4 lh-md mx-2"><a href="#" class="text-white text-decoration-none">How to become a successful businessman</a></h3>
+            <p class="post-descipt cl-ass fs-14 mt-3 mb-4 mx-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugiat at vitae, ratione sapiente repellat.
+            </p>
+            <a href="#" class="btn mx-2 btn-outline-info shadow-none text-white rounded-pill px-4 py-2 fs-14">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="post-area shadow py-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="featured-img overflow-hidden">
+              <img src="./img/2_0.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="meta">
+              <ul class="unstyled px-0 py-2">
+                <li class="d-inline-block px-2"><i class="bx bxs-user me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">admin</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-time me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">June 15th</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-folder me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">Web</span></li>
+              </ul>
+            </div>
+            <h3 class="post-title text-white fs-4 lh-md mx-2"><a href="#" class="text-white text-decoration-none">Making the right decisions for finances</a></h3>
+            <p class="post-descipt cl-ass fs-14 mt-3 mb-4 mx-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugiat at vitae, ratione sapiente repellat.
+            </p>
+            <a href="#" class="mx-2 btn btn-outline-info shadow-none text-white rounded-pill px-4 py-2 fs-14">Read More</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="post-area shadow py-3" data-aos="fade-up" data-aos-delay="450">
+            <div class="featured-img overflow-hidden">
+              <img src="./img/3_0.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="meta">
+              <ul class="unstyled px-0 py-2">
+                <li class="d-inline-block px-2"><i class="bx bxs-user me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">admin</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-time me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">June 15th</span></li>
+                <li class="d-inline-block px-2"><i class="bx bx-folder me-2 text-light fs-14"></i><span class="text-light fw-md text-uppercase fs-14">Web</span></li>
+              </ul>
+            </div>
+            <h3 class="post-title text-white fs-4 lh-md mx-2"><a href="#" class="text-white text-decoration-none">Money isn't always the best motivator</a></h3>
+            <p class="post-descipt cl-ass fs-14 mt-3 mb-4 mx-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fugiat at vitae, ratione sapiente repellat.
+            </p>
+            <a href="#" class="btn mx-2 btn-outline-info shadow-none text-white rounded-pill px-4 py-2 fs-14">Read More</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+<!-- ! latest blog section -->
+
+
+
+<!-- contact me -->
+  <section class="contact-me py-5 bg-3" id="contact-me">
+    <div class="container">
+      <!-- section title -->
+      <div class="section-title text-center py-4">
+        <div class="dots" data-aos="fade-down" data-aos-delay="150">
+          <span class="rounded-circle bg-danger d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-success d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-primary d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-warning d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-white d-inline-block" style="height: 8px; width: 8px;"></span>
+          <span class="rounded-circle bg-6 d-inline-block" style="height: 8px; width: 8px;"></span>
+        </div>
+        <h3 class="fw-bold text-white my-4" data-aos="fade-down" data-aos-delay="300">Contact With Us</h3>
+        <p class="cl-ass fs-16 fw-md" data-aos="fade-down" data-aos-delay="450">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis<br>accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </p>
+      </div>
+      <!-- ! section title -->
+
+      <div class="form-area w-75 m-auto py-5" data-aos="fade-up" data-aos-delay="650">
+        <form action="" class="form">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="name" class="text-white fw-bold mb-1">Name <span class="text-danger fw-bold fs-16">*</span></label>
+              <div class="input-group">
+                <div class="input-group-text"><i class="bx bxs-user"></i></div>
+              <input type="text" name="name" id="name" class="form-control bg-transparent shadow-none text-white" placeholder="Name" aria-label="name">
+              </div>
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+              <label class="text-white fw-bold mb-1" for="contactEmail">E-mail <span class="text-danger fw-bold fs-16">*</span></label>
+              <div class="input-group">
+                <div class="input-group-text"><i class="bx bxs-envelope"></i></div>
+                <input type="email" class="form-control bg-transparent shadow-none text-white" id="contactEmail" placeholder="Enter Email">
+              </div>
+            </div>
+
+            <div class="col-12 my-3">
+              <label for="name" class="text-white fw-bold mb-1">Subject <span class="text-danger fw-bold fs-16">*</span></label>
+              <div class="input-group">
+                <div class="input-group-text"><i class="bx bx-pen"></i></div>
+              <input type="text" name="name" id="name" class="form-control bg-transparent shadow-none text-white" placeholder="Name" aria-label="name">
+              </div>
+            </div>
+
+            <div class="col-12 my-4">
+              <label for="contact-message" class="text-white fw-bold mb-1">Message<span class="text-danger fw-bold fs-16">*</span></label>
+              <textarea name="contactMessage" class="form-control bg-transparent shadow-none text-white" id="contact-message" cols="30" rows="10" placeholder="Write Message"></textarea>
+            </div>
+
+          </div>
+          <input type="submit" value="Send Message" class="btn btn-primary rounded-pill text-uppercase fs-14 fw-bold px-5 py-3">
+        </form>
+      </div>
+
+    </div>
+  </section>
+<!-- ! contact me -->
+
+
+
+</main>
+
+
+
+<!-- footer -->
+  <footer class="footer py-5 bg-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="./assets/favicon/ashik.ico" alt="" class="img-fluid"><span class="fw-bold text-white fs-16 ms-3">Robotizer</span>
+          <p class="text-white fs-14 mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad, a eaque officiis eligendi blanditiis odio necessitatibus.
+          </p>
+          <ul class="unstyled p-0">
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-facebook text-white fs-16"></i></a></li>
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-pinterest text-white fs-16"></i></a></li>
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-instagram text-white fs-16"></i></a></li>
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-twitter text-white fs-16"></i></a></li>
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-youtube text-white fs-16"></i></a></li>
+            <li class="d-inline-block p-2"><a href="#"><i class="bx bxl-linkedin text-white fs-16"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5 class="text-uppercase text-white fs-16 fw-md">NAVIGATE</h5>
+          <ul class="unstyled p-0">
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fs-14 fw-bold">Advertisers</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fs-14 fw-bold">Company</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fs-14 fw-bold">Connect</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fs-14 fw-bold">Developers</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fs-14 fw-bold">Resources</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-2">
+          <h5 class="text-uppercase text-white fs-16 fw-md">PRIVACY & TOS</h5>
+          <ul class="unstyled p-0">
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fw-bold fs-14">Acceptable Use Policy</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fw-bold fs-14">Advertiser Agreement</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fw-bold fs-14">Developer Agreement</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fw-bold fs-14">Privacy Policy</a></li>
+            <li class="d-block"><a href="#" class="text-decoration-none cl-ass fw-bold fs-14">Technology Privacy</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-md-3">
+          <h5 class="text-uppercase text-white fs-16 fw-md">CONTACT US</h5>
+          <ul class="unstyled p-0">
+            <li class="d-block"><span class="text-decoration-none cl-ass fw-bold fs-14">Mailing Address:xx00 E. Union Ave</span></li>
+            <li class="d-block"><span class="text-decoration-none cl-ass fw-bold fs-14">Suite 1100. Denver, CO 80237</span></li>
+            <li class="d-block"><span class="text-decoration-none cl-ass fw-bold fs-14">+999 90932 627</span></li>
+            <li class="d-block"><span class="text-decoration-none cl-ass fw-bold fs-14">support@yourdomain.com</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+<!-- ! footer -->
+
+
+
+
+
+
+  <!-- jQ -->
+  <script src="./assets/js/jquery.js"></script>
+
+  <!-- BS -->
+  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Waypoints -->
+  <script src="./assets/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Isotope -->
+  <script src="./assets/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- OC -->
+  <script src="./assets/OwlCarousel/dist/owl.carousel.min.js"></script>
+
+  <!-- Venobox -->
+  <script src="./assets/VenoBox-master/venobox/venobox.min.js"></script>
+
+  <!-- AOS -->
+  <script src="./assets/aos-master/dist/aos.js"></script>
+
+  <!-- My JS -->
+  <script src="./js/index.js"></script>
+
+
+</body>
+</html>
